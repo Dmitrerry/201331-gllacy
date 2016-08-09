@@ -1,0 +1,13 @@
+body {
+    font-family: Roboto;
+}
+
+.slide-title h1 {
+    font: 700 60px Roboto;
+    color: #ffffff;
+}
+
+.offers h2{
+    font: 700 35px Roboto;
+    color: #ffffff;
+}
