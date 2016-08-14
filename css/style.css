@@ -1,5 +1,17 @@
 body {
+    width: 100%;
     font-family: Roboto;
+    font-size: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slide-title h1 {
@@ -11,3 +23,369 @@ body {
     font: 700 35px Roboto;
     color: #ffffff;
 }
+
+/* ---------- Голова сайта ---------- */
+
+.main-header {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    height: 73px;
+    /* Типографика */
+    font: 700 16px / 18px Roboto;
+    /* Оформление */
+    background-color: dimgray;
+}
+
+.main-logo {
+    display: inline-block;
+    width: 154px;
+    height: 64px;
+}
+
+.main-navigation {
+    display: inline-block;
+}
+
+.DDD > li {
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.main-search {
+    display: inline-block;
+}
+
+.main-login {
+    display: inline-block;
+}
+
+.main-basket {
+    display: inline-block;
+}
+
+
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Слайдер ---------- */
+.contacts {
+    width: 166px;
+}
+
+.contacts p {
+    font: 700 14px / 16px Roboto;
+}
+
+.contacts span {
+    font: 700 22px / 24px Roboto;
+}
+
+.slider {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    height: ;
+    /* Типографика */
+    /* Оформление */
+    background-color: darkred;
+}
+
+
+
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Предложения ---------- */
+
+.offers {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    height: 229px;
+    /* Типографика */
+    /* Оформление */
+    background-color: dimgray;
+}
+
+.offers-item {
+    /* Позиционирование */
+    padding-left: 20px;
+    padding-bottom: 23px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 560px;
+}
+
+.offers h2 {
+    /* Типографика */
+    font: 700 22.97px / 26.912px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+.offers p {
+    /* Типографика */
+    font: 700 11.81px / 14.441px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+.offers a {
+    /* Позиционирование */
+    padding-top: 14px;
+    padding-right: 22px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    /* Блочная модель */
+    width: 189px;
+    height: 45px;
+    /* Типографика */
+    font: 700 11.81px / 15.753px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Топ продаж ---------- */
+
+.top-sales {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    height: 322px;
+    /* Типографика */
+    /* Оформление */
+    background-color: darkred;
+}
+
+.top-sales article {
+    /* Блочная модель */
+    width: 267px;
+    height: 322px;
+}
+
+.top-sales .catalog-item {
+    /* Блочная модель */
+    display: inline-block;
+}
+
+.catalog-item {
+    position: relative;
+    margin-right: 26px;
+}
+
+.catalog-item:last-child {
+    margin-right: 0;
+}
+
+.catalog-item .price {
+    position: absolute;
+    bottom: 54px;
+    /* Типографика */
+    font: 700 45px / 45px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+.price span {
+    /* Типографика */
+    font: 700 30px / 45px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+.catalog-item a {
+    width: 247px;
+    font: 500 16px / 22px Roboto;
+    
+}
+
+/* ---------- ---------- ---------- */
+
+/* ---------- О компании ---------- */
+
+.about-company {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    height: 306px;
+    /* Типографика */
+    /* Оформление */
+    background-color: dimgray;
+}
+
+.about-company h3 {
+    /* Типографика */
+    font: 500 24px / 30px Roboto;
+    /* Оформление */
+    color: #323232;
+}
+
+.about-company ul {
+    font: 400 16px / 22px Roboto;
+    color: #323232;
+}
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Полезная информация ---------- */
+
+.helpful-info {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    height: 220px;
+    /* Типографика */
+    /* Оформление */
+    background-color: darkred;
+}
+
+.blog {
+    display: inline-block;
+    vertical-align: top;
+    width: 560px;
+}
+
+.blog span {
+    display: block;
+    padding-top: 26px;
+    font: 500 16px / 22px Roboto;
+    /* Оформление */
+    color: #323232;
+}
+
+.blog a {
+    font: 700 24px / 30px Roboto;
+    /* Оформление */
+    color: #323232;
+}
+
+.subscription {
+    display: inline-block;
+    vertical-align: top;
+    width: 549px; 
+}
+
+.subscription p {
+    padding-top: 33px;
+    font: 400 16px / 22px Roboto;
+    color: #5a5a5a;
+}
+
+.subscription input[type="text"] {
+    width: 368px;
+    height: 44px;
+    font: 400 16px / 24px Roboto;
+    color: #999999;
+}
+
+.subscription button {
+    width: 129px;
+    height: 44px;
+    font: 700 18px / 24px Roboto;
+    color: #fefefe;
+}
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Карта ---------- */
+
+.map {
+    /* Позиционирование */
+    /* Блочная модель */
+    display: inline-block;
+    width: 100%;
+    height: 430px;
+    /* Типографика */
+    /* Оформление */
+    background-color: dimgray;
+}
+
+.communication {
+    width: 302px;
+    height: 305px;
+    background-color: purple;
+}
+
+.communication p {
+    font: 400 14px / 20px Roboto;
+}
+
+.communication span {
+    font: 700 18px / 24px Roboto;
+}
+.communication a {
+    width: 252px;
+    height: 44px;
+    color: #fefefe;
+    font: 700 18px / 24px Roboto;
+}
+
+.feedback-field {
+    display: none;
+}
+/* ---------- ---------- ---------- */
+
+/* ---------- Подвал ---------- */
+
+footer {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    height: 103px;
+    /* Типографика */
+    /* Оформление */
+    background-color: darkred;
+}
+
+.social-btn {
+    display: inline-block;
+}
+.social-btn ul {
+    
+}
+
+.documents {
+    display: inline-block;
+}
+
+.documents a {
+    font: 700 13px / 18px Roboto;
+    color: #ffffff;
+}
+
+.copyright {
+    display: inline-block;
+}
+
+.copyright p {
+    font: 400 12px / 18px Roboto;
+}
+/* ---------- ---------- ---------- */
