@@ -15,12 +15,16 @@ body {
 }
 
 .slide-title h1 {
+    /* Типографика */
     font: 700 60px Roboto;
+    /* Оформление */
     color: #ffffff;
 }
 
 .offers h2{
+    /* Типографика */
     font: 700 35px Roboto;
+    /* Оформление */
     color: #ffffff;
 }
 
@@ -33,17 +37,15 @@ body {
     /* Блочная модель */
     display: inline-block;
     width: 1200px;
-    height: 73px;
     /* Типографика */
     font: 700 16px / 18px Roboto;
     /* Оформление */
-    background-color: dimgray;
+    background-color: #829b8d;
 }
 
 .main-logo {
     display: inline-block;
     width: 154px;
-    height: 64px;
 }
 
 .main-navigation {
@@ -76,18 +78,6 @@ body {
 /* ---------- ---------- ---------- */
 
 /* ---------- Слайдер ---------- */
-.contacts {
-    width: 166px;
-}
-
-.contacts p {
-    font: 700 14px / 16px Roboto;
-}
-
-.contacts span {
-    font: 700 22px / 24px Roboto;
-}
-
 .slider {
     /* Позиционирование */
     padding-left: 27px;
@@ -95,13 +85,24 @@ body {
     /* Блочная модель */
     display: inline-block;
     width: 1200px;
-    height: ;
     /* Типографика */
     /* Оформление */
-    background-color: darkred;
+    background-color: #829b8d;
 }
 
+.contacts {
+    width: 166px;
+}
 
+.contacts p {
+    /* Типографика */
+    font: 700 14px / 16px Roboto;
+}
+
+.contacts span {
+    /* Типографика */
+    font: 700 22px / 24px Roboto;
+}
 
 
 /* ---------- ---------- ---------- */
@@ -115,10 +116,9 @@ body {
     /* Блочная модель */
     display: inline-block;
     width: 1200px;
-    height: 229px;
     /* Типографика */
     /* Оформление */
-    background-color: dimgray;
+    background-color: #829b8d;
 }
 
 .offers-item {
@@ -127,6 +127,7 @@ body {
     padding-bottom: 23px;
     /* Блочная модель */
     display: inline-block;
+    vertical-align: baseline;
     width: 560px;
 }
 
@@ -152,7 +153,6 @@ body {
     padding-left: 22px;
     /* Блочная модель */
     width: 189px;
-    height: 45px;
     /* Типографика */
     font: 700 11.81px / 15.753px Roboto;
     /* Оформление */
@@ -170,16 +170,14 @@ body {
     /* Блочная модель */
     display: inline-block;
     width: 1200px;
-    height: 322px;
     /* Типографика */
     /* Оформление */
-    background-color: darkred;
+    background-color: #829b8d;
 }
 
 .top-sales article {
     /* Блочная модель */
     width: 267px;
-    height: 322px;
 }
 
 .top-sales .catalog-item {
@@ -214,6 +212,7 @@ body {
 
 .catalog-item a {
     width: 247px;
+    /* Типографика */
     font: 500 16px / 22px Roboto;
     
 }
@@ -228,11 +227,11 @@ body {
     padding-right: 27px;
     /* Блочная модель */
     display: inline-block;
+    vertical-align: baseline;
     width: 1200px;
-    height: 306px;
     /* Типографика */
     /* Оформление */
-    background-color: dimgray;
+    background-color: #829b8d;
 }
 
 .about-company h3 {
@@ -243,7 +242,9 @@ body {
 }
 
 .about-company ul {
+    /* Типографика */
     font: 400 16px / 22px Roboto;
+    /* Оформление */
     color: #323232;
 }
 
@@ -258,10 +259,9 @@ body {
     /* Блочная модель */
     display: inline-block;
     width: 1200px;
-    height: 220px;
     /* Типографика */
     /* Оформление */
-    background-color: darkred;
+    background-color: #829b8d;
 }
 
 .blog {
@@ -271,42 +271,49 @@ body {
 }
 
 .blog span {
+    /* Блочная модель */
     display: block;
     padding-top: 26px;
+    /* Типографика */
     font: 500 16px / 22px Roboto;
     /* Оформление */
     color: #323232;
 }
 
 .blog a {
+    /* Типографика */
     font: 700 24px / 30px Roboto;
     /* Оформление */
     color: #323232;
 }
 
 .subscription {
+    /* Блочная модель */
     display: inline-block;
     vertical-align: top;
     width: 549px; 
 }
 
 .subscription p {
-    padding-top: 33px;
+    /* Типографика */
     font: 400 16px / 22px Roboto;
+    /* Оформление */
     color: #5a5a5a;
 }
 
 .subscription input[type="text"] {
     width: 368px;
-    height: 44px;
+    /* Типографика */
     font: 400 16px / 24px Roboto;
+    /* Оформление */
     color: #999999;
 }
 
 .subscription button {
     width: 129px;
-    height: 44px;
+    /* Типографика */
     font: 700 18px / 24px Roboto;
+    /* Оформление */
     color: #fefefe;
 }
 
@@ -319,33 +326,36 @@ body {
     /* Блочная модель */
     display: inline-block;
     width: 100%;
-    height: 430px;
     /* Типографика */
     /* Оформление */
-    background-color: dimgray;
+    background-color: #829b8d;
 }
 
 .communication {
     width: 302px;
-    height: 305px;
+    /* Оформление */
     background-color: purple;
 }
 
 .communication p {
+    /* Типографика */
     font: 400 14px / 20px Roboto;
 }
 
 .communication span {
+    /* Типографика */
     font: 700 18px / 24px Roboto;
 }
 .communication a {
     width: 252px;
-    height: 44px;
-    color: #fefefe;
+    /* Типографика */
     font: 700 18px / 24px Roboto;
+    /* Оформление */
+    color: #fefefe;
 }
 
 .feedback-field {
+    /* Блочная модель */
     display: none;
 }
 /* ---------- ---------- ---------- */
@@ -358,11 +368,11 @@ footer {
     padding-right: 27px;
     /* Блочная модель */
     display: inline-block;
+    
     width: 1200px;
-    height: 103px;
     /* Типографика */
     /* Оформление */
-    background-color: darkred;
+    background-color: #829b8d;
 }
 
 .social-btn {
@@ -373,11 +383,14 @@ footer {
 }
 
 .documents {
+    /* Блочная модель */
     display: inline-block;
 }
 
 .documents a {
+    /* Типографика */
     font: 700 13px / 18px Roboto;
+    /* Оформление */
     color: #ffffff;
 }
 
@@ -386,6 +399,40 @@ footer {
 }
 
 .copyright p {
+    /* Типографика */
     font: 400 12px / 18px Roboto;
 }
 /* ---------- ---------- ---------- */
+
+/* ---------- КАТАЛОГ ---------- */
+.catalog {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    vertical-align: ; 
+    width: 1200px;
+    /* Типографика */
+    /* Оформление */
+    background-color: #829b8d;
+}
+
+.catalog article {
+    /* Блочная модель */
+    width: 267px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-right: 26px;
+}
+
+
+.catalog-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+/* ---------- ---------- ---------- */
+/* ---------- диапозон ---------- */
+
