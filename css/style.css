@@ -56,21 +56,76 @@ body {
     display: inline-block;
 }
 
+.DDD a {
+    padding-right: 10px;
+    text-decoration: none;
+    font: 700 16px / 18px Roboto;
+    color: #ffffff;
+}
+
 .hidden {
     display: none;
 }
 
+.customer-panel {
+    display: inline-block;
+    margin-left: 357px;
+}
 
 .main-search {
     display: inline-block;
+    vertical-align: top;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .main-login {
     display: inline-block;
+    vertical-align: top;
+    width: 93px;
+    height: 32px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.main-login a {
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-bottom: 9px;
+    padding-left: 44px;
+    text-decoration: none;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
 }
 
 .main-basket {
     display: inline-block;
+    vertical-align: top;
+    width: 117px;
+    height: 32px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.main-basket a {
+    padding-top: 10px;
+    padding-right: 34px;
+    padding-bottom: 9px;
+    padding-left: 45px;
+    text-decoration: none;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+    line-height: 16px;
 }
 
 
@@ -131,6 +186,17 @@ body {
     width: 560px;
 }
 
+.raspberry {
+    background: url("/img/raspberry-background.png");
+    background-repeat: no-repeat;
+    padding-right: 26px;
+}
+
+.chocolate {
+    background: url("/img/chocolate-background.png");
+    background-repeat: no-repeat;
+}
+
 .offers h2 {
     /* Типографика */
     font: 700 22.97px / 26.912px Roboto;
@@ -188,6 +254,12 @@ body {
 .catalog-item {
     position: relative;
     margin-right: 26px;
+}
+
+.catalog-item a {
+    text-decoration: none;
+    font: 500 10.5px / 14.441px Roboto;
+    color: #ffffff;
 }
 
 .catalog-item:last-child {
@@ -431,8 +503,17 @@ footer {
 .catalog-item:nth-child(4n) {
     margin-right: 0;
 }
-
-
 /* ---------- ---------- ---------- */
-/* ---------- диапозон ---------- */
+
+
+/* ---------- Шрифты ---------- */
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/web/roboto.woff2")
+    format("woff2"),
+         url("../fonts/web/roboto.woff")
+    format("woff")
+}
+
+
 
