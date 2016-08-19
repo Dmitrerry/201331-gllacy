@@ -96,6 +96,7 @@ body {
 }
 
 .main-login a {
+    display: block;
     padding-top: 10px;
     padding-right: 17px;
     padding-bottom: 9px;
@@ -118,6 +119,7 @@ body {
 }
 
 .main-basket a {
+    display: block;
     padding-top: 10px;
     padding-right: 34px;
     padding-bottom: 9px;
@@ -187,13 +189,13 @@ body {
 }
 
 .raspberry {
-    background: url("/img/raspberry-background.png");
+    background: url("../img/raspberry-background.png");
     background-repeat: no-repeat;
     padding-right: 26px;
 }
 
 .chocolate {
-    background: url("/img/chocolate-background.png");
+    background: url("../img/chocolate-background.png");
     background-repeat: no-repeat;
 }
 
@@ -303,7 +305,7 @@ body {
     width: 1200px;
     /* Типографика */
     /* Оформление */
-    background-color: #829b8d;
+    background-color: url("../img/wafer-background.png");
 }
 
 .about-company h3 {
@@ -340,6 +342,7 @@ body {
     display: inline-block;
     vertical-align: top;
     width: 560px;
+    background: url("../img/strawberry-background.png");
 }
 
 .blog span {
@@ -400,7 +403,7 @@ body {
     width: 100%;
     /* Типографика */
     /* Оформление */
-    background-color: #829b8d;
+    background-color: url("../img/map.png")
 }
 
 .communication {
