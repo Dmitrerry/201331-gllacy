@@ -561,6 +561,101 @@ footer {
 }
 /* ---------- ---------- ---------- */
 
+/* ---------- Форма заказа ---------- */
+.order-designer {
+    width: 1200px;
+    margin-bottom: 15px;
+}
+
+.sorting {
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 194px;
+    font: 500 16px / 18px Roboto;
+    color: #ffffff;
+    vertical-align: top;
+    height: 37px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+.sorting legend {
+    width: 82px;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+}
+
+.price-selector {
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+    height: 37px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.price-selector legend {
+    width: 163px;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+}
+
+.fatness {
+    display: inline-block;
+    width: 415px;
+    font: 500 16px / 18px Roboto;
+    color: #ffffff;
+    vertical-align: top;
+    height: 37px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fatness legend {
+    width: 71px;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+}
+
+.fillers {
+    display: inline-block;
+    width: 703px;
+    font: 500 16px / 18px Roboto;
+    color: #ffffff;
+    vertical-align: top;
+    height: 37px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fillers legend {
+    width: 91px;
+    font: 500 14px Roboto;
+    color: #ffffff;
+}
+
+.order-designer button {  
+    width: 144px;
+    display: inline-block;
+    vertical-align: top;
+    height: 37px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    font: 500 16px / 18px Roboto;
+    color: #ffffff;
+}
+
+/* ---------- ---------- ---------- */
+
 /* ---------- КАТАЛОГ ---------- */
 .catalog {
     /* Позиционирование */
