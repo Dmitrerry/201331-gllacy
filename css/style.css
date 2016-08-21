@@ -569,17 +569,6 @@ footer {
     color: #ffffff;
 }
 
-.text-field p {
-    display: block;
-    font: 700 14px / 16px Roboto;
-    color: #ffffff;
-}
-
-.text-field span {
-    display: block;
-    font: 700 22px / 24px Roboto;
-    color: #ffffff;
-}
 
 .bread-crumbs li {
     display: inline-block;
@@ -625,6 +614,7 @@ footer {
     -moz-appearance: none;
     appearance: none;
     color: #ffffff;
+    border: 0;
 }
 
 .price-selector {
@@ -634,18 +624,28 @@ footer {
     vertical-align: top;
 }
 
+.price-selector legend {
+    width: 163px;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
 .forms-selector {
     height: 37px;
     width: 220px;
     border-radius: 40px;
     border-style: none;
     background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 
-.price-selector legend {
-    width: 163px;
-    font: 500 14px / 16px Roboto;
-    color: #ffffff;
+input[type="range"] {
+    display: block;
+    width: 188px;
 }
 
 .fatness {
