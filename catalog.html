@@ -89,39 +89,45 @@
                     </fieldset>
                     <fieldset class="price-selector">   
                         <legend>Цена:100руб.-500руб.</legend>
-                        <input type="range" min="0" max="700" step="50">
+                        <div class="forms-selector">
+                            <input type="range" min="0" max="700" step="50">
+                        </div>
                     </fieldset>
                     <fieldset class="fatness">
                         <legend>Жирность:</legend>
-                        <label>
-                            <input type="radio" name="sorting" value="a">
-                            0%
-                        </label>
-                        <label>
-                            <input type="radio" name="sorting" value="b">
-                            до 10%
-                        </label>
-                        <label>
-                            <input type="radio" name="sorting" value="c">
-                            до 30%
-                        </label>
-                        <label>
-                            <input type="radio" name="sorting" value="d">
-                            свыше 30%
-                        </label>
+                        <div class="forms-fatness">
+                            <label>
+                                <input type="radio" name="sorting" value="a">
+                                0%
+                            </label>
+                            <label>
+                                <input type="radio" name="sorting" value="b">
+                                до 10%
+                            </label>
+                            <label>
+                                <input type="radio" name="sorting" value="c">
+                                до 30%
+                            </label>
+                            <label>
+                                <input type="radio" name="sorting" value="d">
+                                свыше 30%
+                            </label>
+                        </div>        
                     </fieldset>
                     <fieldset class="fillers">
                         <legend>Наполнители:</legend>
-                        <input type="checkbox" name="square-1" id="square-1">
-                        <label for="square-1"> шоколадные</label>
-                        <input type="checkbox" name="square-2" id="square-2">
-                        <label for="square-2"> сахарные присыпки</label>
-                        <input type="checkbox" name="square-3" id="square-3">
-                        <label for="square-3"> фрукты</label>
-                        <input type="checkbox" name="square-4" id="square-4">
-                        <label for="square-4"> сиропы</label>
-                        <input type="checkbox" name="square-5" id="square-5">
-                        <label for="square-5"> джемы</label>
+                        <div class="forms-fillers">
+                            <input type="checkbox" name="square-1" id="square-1">
+                            <label for="square-1"> шоколадные</label>
+                            <input type="checkbox" name="square-2" id="square-2">
+                            <label for="square-2"> сахарные присыпки</label>
+                            <input type="checkbox" name="square-3" id="square-3">
+                            <label for="square-3"> фрукты</label>
+                            <input type="checkbox" name="square-4" id="square-4">
+                            <label for="square-4"> сиропы</label>
+                            <input type="checkbox" name="square-5" id="square-5">
+                            <label for="square-5"> джемы</label>
+                        </div>    
                     </fieldset>
                     <button type="submit">Применить</button>
                 </form>
