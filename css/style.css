@@ -1,13 +1,769 @@
 body {
+    width: 100%;
     font-family: Roboto;
+    font-size: 0;
+    background-color: #829b8d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slide-title h1 {
+    /* Типографика */
     font: 700 60px Roboto;
+    /* Оформление */
     color: #ffffff;
 }
 
 .offers h2{
+    /* Типографика */
     font: 700 35px Roboto;
+    /* Оформление */
     color: #ffffff;
 }
+
+/* ---------- Голова сайта ---------- */
+
+.main-header {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    /* Типографика */
+    font: 700 16px / 18px Roboto;
+    /* Оформление */
+    
+}
+
+.main-logo {
+    display: inline-block;
+    width: 154px;
+}
+
+.main-navigation {
+    display: inline-block;
+}
+
+.DDD > li {
+    display: inline-block;
+}
+
+.DDD a {
+    padding-right: 10px;
+    text-decoration: none;
+    font: 700 16px / 18px Roboto;
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+.customer-panel {
+    display: inline-block;
+    margin-left: 357px;
+}
+
+.main-search {
+    display: inline-block;
+    vertical-align: top;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-login {
+    display: inline-block;
+    vertical-align: top;
+    width: 93px;
+    height: 32px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.main-login a {
+    display: block;
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-bottom: 9px;
+    padding-left: 44px;
+    text-decoration: none;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+}
+
+.main-basket {
+    display: inline-block;
+    vertical-align: top;
+    width: 117px;
+    height: 32px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.main-basket a {
+    display: block;
+    padding-top: 10px;
+    padding-right: 34px;
+    padding-bottom: 9px;
+    padding-left: 45px;
+    text-decoration: none;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+    line-height: 16px;
+}
+
+
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Слайдер ---------- */
+.slider {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    /* Типографика */
+    /* Оформление */
+    background-color: #829b8d;
+}
+
+.contacts {
+    width: 166px;
+    float: right;
+}
+
+.contacts p {
+    /* Типографика */
+    font: 700 14px / 16px Roboto;
+    color: #ffffff;
+}
+
+.contacts span {
+    /* Типографика */
+    font: 700 22px / 24px Roboto;
+    color: #ffffff;
+}
+
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Предложения ---------- */
+
+.offers {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    /* Типографика */
+    /* Оформление */
+    background-color: #829b8d;
+    margin-bottom: 10px;
+}
+
+.offers-item {
+    /* Позиционирование */
+    padding-left: 20px;
+    padding-bottom: 23px;
+    /* Блочная модель */
+    display: inline-block;
+    vertical-align: baseline;
+    width: 560px;
+}
+
+.raspberry {
+    vertical-align: top;
+    padding-bottom: 101px;
+    padding-bottom: 101px;
+    background: url("../img/raspberry-background.png");
+    background-repeat: no-repeat;
+    width: 560px;
+}
+
+.raspberry a {
+    display: block;
+    text-decoration: none;
+    background: url(images/orange-button-2.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    text-align: center;
+    width: 165px;
+    font: 1050 17.7px / 23.5px Roboto; 
+}
+
+.chocolate {
+    vertical-align: top;
+    padding-bottom: 101px;
+    padding-bottom: 101px;
+    background: url("../img/chocolate-background.png");
+    background-repeat: no-repeat;
+    width: 560px;
+    margin-left: 26px;
+}
+
+.chocolate a {
+    display: block;
+    text-decoration: none;
+    background: url(images/orange-button-3.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    text-align: center;
+    width: 165px;
+    font: 1050 17.7px / 23.5px Roboto;
+}
+
+.offers h2 {
+    /* Типографика */
+    font: 700 22.97px / 26.912px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+.offers p {
+    /* Типографика */
+    font: 700 11.81px / 14.441px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+.offers a {
+    /* Позиционирование */
+    padding-top: 14px;
+    padding-right: 22px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    /* Блочная модель */
+    width: 189px;
+    /* Типографика */
+    font: 700 11.81px / 15.753px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Топ продаж ---------- */
+
+.top-sales {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    /* Типографика */
+    /* Оформление */
+    background-color: #829b8d;
+    margin-bottom: 30px;
+}
+
+.top-sales article {
+    /* Блочная модель */
+    width: 267px;
+}
+
+.top-sales .catalog-item {
+    /* Блочная модель */
+    display: inline-block;
+}
+
+.catalog-item {
+    position: relative;
+    margin-right: 26px;
+}
+
+.catalog-item a {
+    text-decoration: none;
+    font: 500 10.5px / 14.441px Roboto;
+    color: #ffffff;
+}
+
+.catalog-item:last-child {
+    margin-right: 0;
+}
+
+.catalog-item .price {
+    position: absolute;
+    bottom: 54px;
+    /* Типографика */
+    font: 700 45px / 45px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+.price span {
+    /* Типографика */
+    font: 700 30px / 45px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+.catalog-item a {
+    width: 247px;
+    /* Типографика */
+    font: 500 16px / 22px Roboto;
+    
+}
+
+/* ---------- ---------- ---------- */
+
+/* ---------- О компании ---------- */
+
+.about-company {
+    /* Позиционирование */
+    
+    /* Блочная модель */
+    display: inline-block;
+    vertical-align: baseline;
+    width: 1200px;
+    /* Типографика */
+    /* Оформление */
+   
+}
+
+.wafer {
+    background: url("../img/wafer-background.png");
+    background-repeat: no-repeat;
+    width: 1146px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-company h3 {
+    /* Типографика */
+    font: 500 24px / 30px Roboto;
+    /* Оформление */
+    color: #323232;
+}
+
+.about-company ul {
+    padding-left: 76px;
+    /* Типографика */
+    font: 400 16px / 22px Roboto;
+    /* Оформление */
+    color: #323232;
+}
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Полезная информация ---------- */
+
+.helpful-info {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* Блочная модель */
+    display: inline-block;
+    width: 1200px;
+    /* Типографика */
+    /* Оформление */  
+}
+
+.blog {
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    vertical-align: top;
+    width: 560px;
+    background: url("../img/strawberry-background.png");
+    background-repeat: no-repeat;
+}
+
+.blog span {
+    padding-top: 26px;
+    padding-left: 20px;
+    /* Блочная модель */
+    display: block;
+    /* Типографика */
+    font: 500 16px / 22px Roboto;
+    /* Оформление */
+    color: #323232;
+    
+}
+
+.blog a {
+    display: inline-block;
+    padding-left: 1px;
+    padding-top: 13px;
+    /* Типографика */
+    font: 700 24px / 30px Roboto;
+    /* Оформление */
+    color: #323232;
+}
+
+.subscription {
+    /* Блочная модель */
+    display: inline-block;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    vertical-align: top;
+    width: 549px; 
+    background-color: #f8f7f4;
+    border-radius: 15px;
+    margin-left: 32px;
+}
+
+.subscription p {
+    padding-left: 21px;
+    /* Типографика */
+    font: 400 16px / 22px Roboto;
+    /* Оформление */
+    color: #5a5a5a;
+}
+
+.subscription input[type="text"] {
+    padding-left: 21px;
+    width: 368px;
+    /* Типографика */
+    font: 400 16px / 24px Roboto;
+    /* Оформление */
+    color: #999999;
+}
+
+.subscription button {
+    width: 129px;
+    /* Типографика */
+    font: 700 18px / 24px Roboto;
+    /* Оформление */
+    color: #fefefe;
+}
+
+/* ---------- ---------- ---------- */
+
+/* ---------- Карта ---------- */
+
+.map {
+    /* Позиционирование */
+    /* Блочная модель */
+    display: block;
+    width: 1200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    /* Типографика */
+    /* Оформление */
+    background: url("../img/map.png");
+    background-repeat: no-repeat; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.communication {
+    display: inline-block;
+    padding-left: 25px;
+    width: 302px;
+    height: 305px;
+    /* Оформление */
+    background-color: red;
+}
+
+.communication p {
+    /* Типографика */
+    font: 400 14px / 20px Roboto;
+    color: #323232;
+}
+
+.communication span {
+    /* Типографика */
+    font: 700 18px / 24px Roboto;
+    color: #323232;
+}
+.communication a {
+    word-wrap: normal;
+    display: block;
+    padding-top: 13px;
+    padding-left: 28px;
+    text-decoration: none;
+    width: 196px;
+    /* Типографика */
+    font: 700 18px / 24px Roboto;
+    /* Оформление */
+    color: #fefefe;
+    background: url(images/orange-button-4.png);
+    background-repeat: no-repeat;
+}
+
+.feedback-field {
+    /* Блочная модель */
+    display: none;
+}
+/* ---------- ---------- ---------- */
+
+/* ---------- Подвал ---------- */
+
+footer {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    display: inline-block;
+    /* Блочная модель */
+    width: 1200px;
+    /* Типографика */
+    /* Оформление */
+    background-color: #829b8d;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 350px;
+}
+
+.documents {
+    /* Блочная модель */
+    display: inline-block;
+    width: 350px;
+    
+}
+
+.documents a {
+    /* Типографика */
+    font: 700 13px / 18px Roboto;
+    /* Оформление */
+    color: #ffffff;
+}
+
+.copyright {
+    display: inline-block;
+    width: 350px;
+    
+    
+}
+
+.copyright p {
+    /* Типографика */
+    font: 400 12px / 18px Roboto;
+}
+/* ---------- ---------- ---------- */
+
+/* ---------- Хлебные крошки ---------- */
+.text-field h1 {
+    font: 700 35px / 41px Roboto;
+    color: #ffffff;
+}
+
+
+.bread-crumbs li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.bread-crumbs a {
+    font: 400 14px / 16px Roboto;
+    color: #ffffff;
+}
+/* ---------- ---------- ---------- */
+
+/* ---------- Форма заказа ---------- */
+.order-designer {
+    width: 1200px;
+    margin-bottom: 30px;
+}
+
+.sorting {
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 194px;
+    font: 500 16px / 18px Roboto;
+    color: #ffffff;
+    vertical-align: top;
+    height: 37px;
+    border-style: none;
+}
+.sorting legend {
+    width: 82px;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+}
+
+.sorting select {
+    display: block;
+    width: 194px;
+    height: 37px;
+    padding: 8px 15px;
+    border-radius: 40px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #ffffff;
+    border: 0;
+}
+
+.price-selector {
+    display: inline-block;
+    border: 0;
+    width: 220px;
+    vertical-align: top;
+}
+
+.price-selector legend {
+    width: 163px;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.forms-selector {
+    height: 37px;
+    width: 220px;
+    border-radius: 40px;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+input[type="range"] {
+    display: block;
+    width: 188px;
+}
+
+.fatness {
+    display: inline-block;
+    width: 415px;
+    font: 500 16px / 18px Roboto;
+    color: #ffffff;
+    vertical-align: top;
+    height: 37px;
+    border-style: none;
+    margin-bottom: 35px;
+    height: 37px;
+}
+
+.fatness legend {
+    width: 71px;
+    font: 500 14px / 16px Roboto;
+    color: #ffffff;
+}
+
+.forms-fatness {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 40px;
+}
+
+.fillers {
+    display: inline-block;
+    width: 703px;
+    font: 500 16px / 18px Roboto;
+    color: #ffffff;
+    vertical-align: top;
+    height: 37px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    
+}
+
+.fillers legend {
+    width: 91px;
+    font: 500 14px Roboto;
+    color: #ffffff;
+}
+
+.forms-fillers {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 40px;
+    height: 37px;
+}
+
+.order-designer button {  
+    width: 144px;
+    display: inline-block;
+    vertical-align: top;
+    height: 37px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    font: 500 16px / 18px Roboto;
+    color: #ffffff;
+    border: 0;
+    margin-top: 21px;
+}
+
+/* ---------- ---------- ---------- */
+
+/* ---------- КАТАЛОГ ---------- */
+.catalog {
+    /* Позиционирование */
+    padding-left: 27px;
+    padding-right: 27px;
+    /* Блочная модель */
+    display: inline-block;
+    vertical-align: ; 
+    width: 1200px;
+    /* Типографика */
+    /* Оформление */
+    background-color: #829b8d;
+}
+
+.catalog article {
+    /* Блочная модель */
+    width: 267px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-right: 26px;
+}
+
+
+.catalog-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.switching-board {
+    float: right;
+    width: 124px;
+    font: 500 16px / 18px Roboto;
+}
+
+.switching-board li {
+    display: inline-block;
+}
+/* ---------- ---------- ---------- */
+
+
+/* ---------- Шрифты ---------- */
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/web/roboto.woff2")
+    format("woff2"),
+         url("../fonts/web/roboto.woff")
+    format("woff")
+}
+
+
+
