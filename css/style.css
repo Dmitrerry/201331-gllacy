@@ -150,16 +150,19 @@ body {
 
 .contacts {
     width: 166px;
+    float: right;
 }
 
 .contacts p {
     /* Типографика */
     font: 700 14px / 16px Roboto;
+    color: #ffffff;
 }
 
 .contacts span {
     /* Типографика */
     font: 700 22px / 24px Roboto;
+    color: #ffffff;
 }
 
 
@@ -349,6 +352,8 @@ body {
     padding-right: 27px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-company h3 {
@@ -380,8 +385,7 @@ body {
     display: inline-block;
     width: 1200px;
     /* Типографика */
-    /* Оформление */
-    
+    /* Оформление */  
 }
 
 .blog {
@@ -415,7 +419,6 @@ body {
     font: 700 24px / 30px Roboto;
     /* Оформление */
     color: #323232;
-    
 }
 
 .subscription {
@@ -561,6 +564,35 @@ footer {
 }
 /* ---------- ---------- ---------- */
 
+/* ---------- Хлебные крошки ---------- */
+.text-field h1 {
+    font: 700 35px / 41px Roboto;
+    color: #ffffff;
+}
+
+.text-field p {
+    display: block;
+    font: 700 14px / 16px Roboto;
+    color: #ffffff;
+}
+
+.text-field span {
+    display: block;
+    font: 700 22px / 24px Roboto;
+    color: #ffffff;
+}
+
+.bread-crumbs li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.bread-crumbs a {
+    font: 400 14px / 16px Roboto;
+    color: #ffffff;
+}
+/* ---------- ---------- ---------- */
+
 /* ---------- Форма заказа ---------- */
 .order-designer {
     width: 1200px;
@@ -682,6 +714,16 @@ footer {
 
 .catalog-item:nth-child(4n) {
     margin-right: 0;
+}
+
+.switching-board {
+    float: right;
+    width: 124px;
+    font: 500 16px / 18px Roboto;
+}
+
+.switching-board li {
+    display: inline-block;
 }
 /* ---------- ---------- ---------- */
 
