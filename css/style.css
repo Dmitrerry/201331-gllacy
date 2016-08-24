@@ -325,6 +325,17 @@ body {
     color: #ffffff;
 }
 
+.catalog-item .hit {
+    position: absolute;
+    display: block;
+    width: 61px;
+    height: 61px;
+    background: #ffffff url(../img/sprite.png);
+    border-radius: 50%;
+    background-position: -370px -10px;
+    background-repeat: no-repeat;
+}
+
 .catalog-item:last-child {
     margin-right: 0;
 }
@@ -378,6 +389,32 @@ body {
     padding-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+}
+
+.wafer li:nth-child(1)::before {
+    display: inline-block;
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    width: 48px;
+    height: 49px;
+    background-position: -174px -10px;
+}
+
+.wafer li:nth-child(1) {
+    display: inline-block;
+}
+
+
+
+.wafer li:nth-child(2) {
+    display: inline-block;
+}
+.wafer li:nth-child(3) {
+    display: inline-block;
+}
+.wafer li:nth-child(4) {
+    display: inline-block;
 }
 
 .about-company h3 {
