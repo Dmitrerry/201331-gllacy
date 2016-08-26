@@ -218,6 +218,7 @@ body {
     width: 560px;
 }
 
+
 .raspberry {
     vertical-align: top;
     padding-bottom: 101px;
@@ -230,12 +231,18 @@ body {
 .raspberry a {
     display: block;
     text-decoration: none;
-    background: url(images/orange-button-2.png);
+    width: 167px;
+    height: 48px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f16743;
     background-repeat: no-repeat;
     vertical-align: middle;
     text-align: center;
-    width: 165px;
-    font: 1050 17.7px / 23.5px Roboto; 
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px; 
+    margin-left: 331px;
 }
 
 .chocolate {
@@ -251,24 +258,34 @@ body {
 .chocolate a {
     display: block;
     text-decoration: none;
-    background: url(images/orange-button-3.png);
+    width: 189px;
+    height: 45px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f16743;
     background-repeat: no-repeat;
     vertical-align: middle;
     text-align: center;
-    width: 165px;
-    font: 1050 17.7px / 23.5px Roboto;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 330px;
 }
 
 .offers h2 {
     /* Типографика */
-    font: 700 22.97px / 26.912px Roboto;
+    font-family: Roboto;
+    font-size: 35px;
+    line-height: 41px;
     /* Оформление */
     color: #ffffff;
 }
 
 .offers p {
     /* Типографика */
-    font: 700 11.81px / 14.441px Roboto;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 22px;
     /* Оформление */
     color: #ffffff;
 }
@@ -282,7 +299,9 @@ body {
     /* Блочная модель */
     width: 189px;
     /* Типографика */
-    font: 700 11.81px / 15.753px Roboto;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
     /* Оформление */
     color: #ffffff;
 }
@@ -376,7 +395,28 @@ body {
     width: 1200px;
     /* Типографика */
     /* Оформление */
-   
+}
+
+.about-company ul {
+    width: 100%;
+    padding: 0;
+    padding-left: 76px;
+    color: #323232;
+}
+
+.about-company li {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.about-company h3 {
+    /* Типографика */
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 30px;
+    /* Оформление */
+    color: #323232;
 }
 
 .wafer {
@@ -386,31 +426,33 @@ body {
     padding-left: 27px;
     padding-right: 27px;
     padding-top: 5px;
-    padding-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 }
 
 .wafer ul {
-    width: 476px;
-    /*height: 171px;*/
-    margin-bottom:20px;
-    overflow:hidden;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    vertical-align: top;
+    
 }
 
 .wafer li {
-    line-height:1.5em;
-    float: right;
-    display: inline;
+    display: inline-block;
+    width: 476px;
+    margin-bottom: 20px;
 }
 
 
 
-.wafer li:nth-child(1) {
+.first-half li:nth-child(1) {
     display: inline-block;
 }
-.wafer li:nth-child(1):before {
+
+.first-half li:nth-child(1)::before {
     display: inline-block;
     content: "";
     position: absolute;
@@ -421,10 +463,11 @@ body {
     left: 50px;
 }
 
-.wafer li:nth-child(2) {
-    display: inline-block
+.first-half li:nth-child(2) {
+    display: inline-block;
 }
-.wafer li:nth-child(2)::before {
+
+.first-half li:nth-child(2)::before {
     display: inline-block;
     content: "";
     position: absolute;
@@ -435,11 +478,11 @@ body {
     left: 50px; 
 }
 
-.wafer li:nth-child(3) {
+.second-half li:nth-child(1) {
     display: inline-block;
 }
 
-.wafer li:nth-child(3)::before {
+.second-half li:nth-child(1)::before {
     display: inline-block;
     content: "";
     position: absolute;
@@ -447,14 +490,14 @@ body {
     width: 48px;
     height: 49px;
     background-position: -174px -10px;
-    left: 50px;
+    left: 595px; 
 }
 
-.wafer li:nth-child(4) {
+.second-half li:nth-child(2) {
     display: inline-block;
 }
 
-.wafer li:nth-child(4)::before {
+.second-half li:nth-child(2)::before {
     display: inline-block;
     content: "";
     position: absolute;
@@ -462,23 +505,7 @@ body {
     width: 48px;
     height: 49px;
     background-position: -846px -10px;
-    left: 50px;
-    
-}
-
-.about-company h3 {
-    /* Типографика */
-    font: 500 24px / 30px Roboto;
-    /* Оформление */
-    color: #323232;
-}
-
-.about-company ul {
-    padding-left: 76px;
-    /* Типографика */
-    font: 400 16px / 22px Roboto;
-    /* Оформление */
-    color: #323232;
+    left: 595px;
 }
 
 /* ---------- ---------- ---------- */
@@ -500,22 +527,24 @@ body {
 
 .blog {
     display: inline-block;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 20px;
     vertical-align: top;
     width: 560px;
+    height: 220px;
     background: url("../img/strawberry-background.png");
     background-repeat: no-repeat;
 }
 
 .blog span {
-    padding-top: 26px;
-    padding-left: 20px;
+    padding-top: 13px;
     /* Блочная модель */
     display: block;
     /* Типографика */
-    font: 500 16px / 22px Roboto;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
     /* Оформление */
     color: #323232;
     
@@ -524,9 +553,11 @@ body {
 .blog a {
     display: inline-block;
     padding-left: 1px;
-    padding-top: 13px;
+    width: 285px;
     /* Типографика */
-    font: 700 24px / 30px Roboto;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 30px;
     /* Оформление */
     color: #323232;
 }
@@ -537,10 +568,11 @@ body {
     padding-top: 48px;
     padding-bottom: 48px;
     vertical-align: top;
-    width: 549px; 
-    background-color: #f8f7f4;
+    width: 560px; 
+    background-image: url(../img/letter-background.png);
+    background-repeat: no-repeat;
     border-radius: 15px;
-    margin-left: 32px;
+    margin-left: 25px;
 }
 
 .subscription p {
@@ -1103,6 +1135,14 @@ input[type="range"] {
 }
 
 /* ---------- ---------- ---------- */
+
+/*  
+    width: 189px;
+    height: 45px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f16743;
+*/
 
 
 
