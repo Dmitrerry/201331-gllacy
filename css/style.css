@@ -564,9 +564,10 @@ body {
 
 .subscription {
     /* Блочная модель */
+    padding-left: 26px;
     display: inline-block;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 37px;
+    padding-bottom: 40px;
     vertical-align: top;
     width: 560px; 
     background-image: url(../img/letter-background.png);
@@ -576,16 +577,21 @@ body {
 }
 
 .subscription p {
-    padding-left: 21px;
     /* Типографика */
-    font: 400 16px / 22px Roboto;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
     /* Оформление */
     color: #5a5a5a;
+    margin-top: -6px;
+    margin-bottom: 38px;
 }
 
 .subscription input[type="text"] {
-    padding-left: 21px;
     width: 368px;
+    height: 44px;
     /* Типографика */
     font: 400 16px / 24px Roboto;
     /* Оформление */
@@ -593,11 +599,17 @@ body {
 }
 
 .subscription button {
+    display: inline-block;
     width: 129px;
     /* Типографика */
     font: 700 18px / 24px Roboto;
     /* Оформление */
+    height: 44px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f16743;
     color: #fefefe;
+    margin-left: 11px;
 }
 
 /* ---------- ---------- ---------- */
@@ -1137,8 +1149,8 @@ input[type="range"] {
 /* ---------- ---------- ---------- */
 
 /*  
-    width: 189px;
-    height: 45px;
+    width: 129px;
+    height: 44px;
     border-radius: 25px;
     border-style: none;
     background-color: #f16743;
