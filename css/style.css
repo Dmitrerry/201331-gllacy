@@ -40,26 +40,29 @@ body {
     width: 1200px;
     /* Типографика */
     font: 700 16px / 18px Roboto;
-    /* Оформление */
-    
+    /* Оформление */  
 }
 
 .main-logo {
     display: inline-block;
     width: 154px;
+    vertical-align: bottom;
 }
 
 .main-navigation {
     display: inline-block;
     position: relative;
     z-index: 1;
+    
 }
 
 .DDD > li {
     display: inline-block;
     position: relative;
     z-index: 1;
+    
 }
+
 
 .DDD a {
     padding-right: 10px;
@@ -71,11 +74,88 @@ body {
 .hidden {
     display: none;
 }
+/*------------------------------------*/
+.navigation-line {
+    display: none;
+    position: absolute;
+    top: 30px;
+    padding: 5px;
+}
+
+.catalog-button:hover ~ .navigation-line, .navigation-line:hover {
+    display: block;
+}
+/*------------------------------------*/
+.two-button > a {
+    padding-left: 14px;
+    padding-right: 13px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
+
+.two-button > a:hover {
+    border-radius: 25px;
+    border-style: none;
+    background-color: #ffffff;
+    color: #323232;
+}
+
+.two-button > a:active {
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f6b5a5;
+    color: #323232;
+}
+
+ /*------------------------------------*/
+.catalog-panel {  
+    display: block;
+    background-color: #f8f7f4;
+    width: 143px;
+    height: 171px;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 5px;  
+}
+
+.catalog-panel a {
+    width: 100%;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #323232;
+    padding-left: 21px;
+    height: 28px;
+}
+
+.catalog-panel .news {
+    color: #323232;  
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700; 
+}
+
+.news {
+    width: 128px;
+    margin-left: 0;
+    margin-top: 13px;
+    border-bottom: 1px solid #d1d0ce;  
+}
+
+.catalog-panel a:hover {
+    background-color: #fbded7;
+    color: #323232;
+}
 
 .customer-panel {
     display: inline-block;
     margin-left: 357px;
 }
+/*------------------------------------*/
 
 .main-search {
     display: inline-block;
@@ -1146,16 +1226,6 @@ input[type="range"] {
 }
 /* ---------- ---------- ---------- */
 
-
-/* ---------- Шрифты ---------- */
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/web/roboto.woff2")
-    format("woff2"),
-         url("../fonts/web/roboto.woff")
-    format("woff")
-}
-
 /* ---------- СПРАЙТЫ ---------- */
 
 .sprite {
@@ -1275,9 +1345,9 @@ input[type="range"] {
 /* ---------- ---------- ---------- */
 
 /*  
-    width: 252px;
-    height: 44px;
+    width: 87px;
+    height: 32px;
     border-radius: 25px;
     border-style: none;
-    background-color: #f16743;
+    background-color: #ffffff;
 */
