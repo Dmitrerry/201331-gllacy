@@ -40,7 +40,8 @@ body {
     width: 1200px;
     /* Типографика */
     font: 700 16px / 18px Roboto;
-    /* Оформление */  
+    /* Оформление */ 
+    font-size: 0;
 }
 
 .main-logo {
@@ -155,20 +156,39 @@ body {
     display: inline-block;
     margin-left: 319px;
 }
-/*------------------------------------*/
 
+/*------------------------------------*/
 .main-search {
-    display: inline-block;
+    display: inline-block;  
+}
+
+.XXXXX {
     vertical-align: top;
-    width: 33px;
-    height: 33px;
     border-radius: 50%;
     border-color: rgba(255, 255, 255, 0.2);
     border-style: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    width: 33px;
+    height: 33px;
+    display: block;
     background-image: url(../img/sprite.png);
     background-position: -762px -3px; 
+    background-color: rgba(255, 255, 255, 0.2);
 }
+
+.XXXXX:hover {
+    background-color: #f8f7f4;
+}
+
+.search-line {
+    position: absolute;
+    top: 100px;
+}
+
+input[type="search"] {
+    font-size: 14px;
+}
+
+/*------------------------------------*/
 
 .main-login {
     display: inline-block;
@@ -180,6 +200,7 @@ body {
     border-style: none;
     background-color: rgba(255, 255, 255, 0.2);
     position: relative;
+    margin-left: 10px;
 }
 
 .main-login::before {
