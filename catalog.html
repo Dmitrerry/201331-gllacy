@@ -5,6 +5,7 @@
         <title>HTML Academy: Глейси</title>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -14,10 +15,10 @@
                 </div>
                 <nav class="main-navigation">
                     <ul class="DDD">
-                        <li><a href="catalog.html">Каталог</a>
+                        <li class="two-button"><a href="catalog.html">Каталог</a>
                             <div class="navigation-line">
-                                <ul class="hidden">
-                                    <li><b><a href="#">Новинки</a></b></li>
+                                <ul class="catalog-panel">
+                                    <li class="news"><a href="#">Новинки</a></li>
                                     <li><a href="catalog.html">Сливочное</a></li>
                                     <li><a href="#">Щербеты</a></li>
                                     <li><a href="#">Фруктовый лед</a></li>
@@ -25,15 +26,15 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">О Компании</a></li>
+                        <li class="two-button"><a href="#">Доставка и оплата</a></li>
+                        <li class="two-button"><a href="#">О Компании</a></li>
                     </ul>    
                 </nav>
                 <div class="customer-panel">
                     <div class="main-search">
-                        <a href="#"></a>
+                        <a class="search-button" href="#"></a>
                         <div class="search-line">
-                            <div class="search-field hidden">
+                            <div class="search-field">
                                 <form action="#" method="post">
                                     <input type="search" name="search" placeholder="Что ищем?">
                                 </form>
@@ -41,15 +42,17 @@
                         </div>
                     </div>
                     <div class="main-login">
-                        <a href="#">Вход</a>
+                        <a class="enter-button" href="#">Вход</a>
                         <div class="login-line">
-                            <div class="login-field hidden">
+                            <div class="login-field">
                                 <form action="#" method="post">
                                     <input type="text" name="login" id="login-field" placeholder="Электронная почта">    
                                     <input type="password" name="password" id="password-field" placeholder="Пароль">
                                     <button type="submit">Войти</button>
-                                    <a href="#">Забыли пароль?</a>
-                                    <a href="#">Новая регистрация</a>
+                                    <div class="login-links">
+                                        <a href="#">Забыли пароль?</a>
+                                        <a href="#">Новая регистрация</a>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -57,7 +60,7 @@
                     <div class="main-basket red-basket">
                         <a href="#">2товара</a>
                         <div class="basket-line">
-                            <div class="basket-field">
+                            <div class="basket-field hidden">
                                 <a href="#"></a>
                                 <a href="#"></a>
                             </div>
