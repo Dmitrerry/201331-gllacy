@@ -5,6 +5,7 @@
         <title>HTML Academy: Глейси</title>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
     </head>
     <body>
         <div class="container">   
@@ -14,10 +15,10 @@
             </div>
             <nav class="main-navigation">
                 <ul class="DDD">
-                    <li><a href="catalog.html">Каталог</a>
+                    <li class="two-button"><a class="catalog-button" href="catalog.html">Каталог</a>
                         <div class="navigation-line">
-                            <ul class="hidden">
-                                <li><b><a href="#">Новинки</a></b></li>
+                            <ul class="catalog-panel">
+                                <li><a class="news" href="#">Новинки</a></li>
                                 <li><a href="catalog.html">Сливочное</a></li>
                                 <li><a href="#">Щербеты</a></li>
                                 <li><a href="#">Фруктовый лед</a></li>
@@ -25,15 +26,15 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О Компании</a></li>
+                    <li class="two-button"><a href="#">Доставка и оплата</a></li>
+                    <li class="two-button"><a href="#">О Компании</a></li>
                 </ul>    
             </nav>
             <div class="customer-panel">
                 <div class="main-search">
-                    <a href="#"></a>
+                    <a class="XXXXX" href="#"></a>
                     <div class="search-line">
-                        <div class="search-field hidden">
+                        <div class="search-field">
                             <form action="#" method="post">
                                 <input type="search" name="search" placeholder="Что ищем?">
                             </form>
@@ -134,12 +135,14 @@
         <section class="about-company">
             <div class="wafer">
                 <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-                <ul>
+                <ul class="first-half">
                     <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
                     <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+                </ul>
+                <ul class="second-half">    
                     <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
                     <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-                </ul>  
+                </ul>
             </div>  
         </section>
         <section class="helpful-info">
@@ -189,9 +192,11 @@
                     </ul>
                 </div>
                 <div class="documents">
-                    <ul>
+                    <ul class="third-half">
                         <li><a href="#">Для поставщиков</a></li>
                         <li><a href="#">О производстве</a></li>
+                    </ul>
+                    <ul class="fourth-half">       
                         <li><a href="#">Наши документы</a></li>
                         <li><a href="#">Экологические стандарты</a></li>
                     </ul>

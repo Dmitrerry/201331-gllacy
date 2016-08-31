@@ -40,22 +40,30 @@ body {
     width: 1200px;
     /* Типографика */
     font: 700 16px / 18px Roboto;
-    /* Оформление */
-    
+    /* Оформление */ 
+    font-size: 0;
 }
 
 .main-logo {
     display: inline-block;
     width: 154px;
+    vertical-align: bottom;
 }
 
 .main-navigation {
     display: inline-block;
+    position: relative;
+    z-index: 1;
+    
 }
 
 .DDD > li {
     display: inline-block;
+    position: relative;
+    z-index: 1;
+    
 }
+
 
 .DDD a {
     padding-right: 10px;
@@ -67,22 +75,143 @@ body {
 .hidden {
     display: none;
 }
+/*------------------------------------*/
+.navigation-line {
+    display: none;
+    position: absolute;
+    top: 30px;
+    padding: 5px;
+}
+
+.catalog-button:hover ~ .navigation-line, .navigation-line:hover {
+    display: block;
+}
+/*------------------------------------*/
+.two-button > a {
+    padding-left: 14px;
+    padding-right: 13px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
+
+.two-button > a:hover {
+    border-radius: 25px;
+    border-style: none;
+    background-color: #ffffff;
+    color: #323232;
+}
+
+.two-button > a:active {
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f6b5a5;
+    color: #323232;
+}
+
+ /*------------------------------------*/
+.catalog-panel {  
+    display: block;
+    background-color: #f8f7f4;
+    width: 143px;
+    height: 171px;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 5px;  
+}
+
+.catalog-panel a {
+    width: 100%;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #323232;
+    padding-left: 21px;
+    height: 28px;
+}
+
+.catalog-panel .news {
+    color: #323232;  
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700; 
+}
+
+.news {
+    width: 128px;
+    margin-left: 0;
+    margin-top: 13px;
+    border-bottom: 1px solid #d1d0ce;  
+}
+
+.catalog-panel a:hover {
+    background-color: #fbded7;
+    color: #323232;
+}
 
 .customer-panel {
     display: inline-block;
-    margin-left: 357px;
+    margin-left: 319px;
 }
 
+/*------------------------------------*/
 .main-search {
     display: inline-block;
+    
+    
+}
+
+.XXXXX {
     vertical-align: top;
-    width: 33px;
-    height: 33px;
     border-radius: 50%;
     border-color: rgba(255, 255, 255, 0.2);
     border-style: none;
+    width: 33px;
+    height: 33px;
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-position: -762px -3px; 
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+.XXXXX:hover {
+    background-color: #f8f7f4;
+}
+
+.search-line {
+    content: "";
+    position: absolute;
+    left: 670px;
+    top: 70px;
+    z-index: 2;
+    
+}
+
+input[type="search"] {
+    font-size: 14px;
+    font-family: Roboto;
+    line-height: 24px;
+    width: 311px;
+    height: 44px;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+.search-field {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    background-color: #f8f7f4;    
+}
+
+.XXXXX:hover {
+    background-color: #f8f7f4;
+}
+/*------------------------------------*/
 
 .main-login {
     display: inline-block;
@@ -93,7 +222,20 @@ body {
     border-color: rgba(255, 255, 255, 0.2);
     border-style: none;
     background-color: rgba(255, 255, 255, 0.2);
-    
+    position: relative;
+    margin-left: 10px;
+}
+
+.main-login::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    background-position: -242px -10px;
+    width: 21px;
+    height: 19px;
+    top: 5px;
+    left: 18px;
+        
 }
 
 .main-login a {
@@ -116,7 +258,18 @@ body {
     border-color: rgba(255, 255, 255, 0.2);
     border-style: none;
     background-color: rgba(255, 255, 255, 0.2);
-    
+    position: relative;
+}
+
+.main-basket::before {
+    background-image: url(../img/sprite.png);
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 20px;
+    background-position: -10px -10px;
+    top: 4px;
+    left: 19px;
 }
 
 .main-basket a {
@@ -130,22 +283,22 @@ body {
     color: #ffffff;
     line-height: 16px;
 }
-
-
-
 /* ---------- ---------- ---------- */
+
 
 /* ---------- Слайдер ---------- */
 .slider {
     /* Позиционирование */
-    padding-left: 27px;
-    padding-right: 27px;
     /* Блочная модель */
     display: inline-block;
     width: 1200px;
+    height: 881px;
     /* Типографика */
     /* Оформление */
     background-color: #829b8d;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .contacts {
@@ -165,6 +318,68 @@ body {
     color: #ffffff;
 }
 
+.slide {
+    width: 100%;
+    background-position: 250px center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    height: 881px;
+}
+.slide .slide-btn {
+    position: absolute;
+    padding-left: 41px;
+    padding-right: 43px;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    display: block;
+    font-family: Roboto;
+    font-size: 32px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #ffffff;
+    width: 282px;
+    height: 64px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f16743;
+    top: 620px;
+    left: 400px;
+}
+
+.site-wrapper {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    background-image: url(../img/light-background.png);
+    background-repeat: no-repeat;
+    top: -84px;
+}
+
+.slide:nth-child(1) {
+    background-image: url(../img/slider-1.png);
+    
+}
+
+.slide h1 {
+    width: 665px;
+    display: inline-block;
+    position: absolute;
+    top: 415px;
+    left: 240px;
+}
+
+.slide:nth-child(2) {
+    display: none;
+    background-image: url(../img/slider-2.png);
+    background-repeat: no-repeat;
+}
+
+.slide:nth-child(3) {
+    display: none;
+    background-image: url(../img/slider-3.png);
+    background-repeat: no-repeat;
+}
 
 /* ---------- ---------- ---------- */
 
@@ -175,12 +390,13 @@ body {
     padding-left: 27px;
     padding-right: 27px;
     /* Блочная модель */
-    display: inline-block;
     width: 1200px;
     /* Типографика */
     /* Оформление */
     background-color: #829b8d;
     margin-bottom: 10px;
+    margin-top: -250px;
+    
 }
 
 .offers-item {
@@ -191,7 +407,10 @@ body {
     display: inline-block;
     vertical-align: baseline;
     width: 560px;
+    position: relative;
+    z-index: 1;
 }
+
 
 .raspberry {
     vertical-align: top;
@@ -205,12 +424,18 @@ body {
 .raspberry a {
     display: block;
     text-decoration: none;
-    background: url(images/orange-button-2.png);
+    width: 167px;
+    height: 48px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f16743;
     background-repeat: no-repeat;
     vertical-align: middle;
     text-align: center;
-    width: 165px;
-    font: 1050 17.7px / 23.5px Roboto; 
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px; 
+    margin-left: 331px;
 }
 
 .chocolate {
@@ -226,24 +451,34 @@ body {
 .chocolate a {
     display: block;
     text-decoration: none;
-    background: url(images/orange-button-3.png);
+    width: 189px;
+    height: 45px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f16743;
     background-repeat: no-repeat;
     vertical-align: middle;
     text-align: center;
-    width: 165px;
-    font: 1050 17.7px / 23.5px Roboto;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 330px;
 }
 
 .offers h2 {
     /* Типографика */
-    font: 700 22.97px / 26.912px Roboto;
+    font-family: Roboto;
+    font-size: 35px;
+    line-height: 41px;
     /* Оформление */
     color: #ffffff;
 }
 
 .offers p {
     /* Типографика */
-    font: 700 11.81px / 14.441px Roboto;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 22px;
     /* Оформление */
     color: #ffffff;
 }
@@ -257,7 +492,9 @@ body {
     /* Блочная модель */
     width: 189px;
     /* Типографика */
-    font: 700 11.81px / 15.753px Roboto;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
     /* Оформление */
     color: #ffffff;
 }
@@ -277,6 +514,8 @@ body {
     /* Оформление */
     background-color: #829b8d;
     margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .top-sales article {
@@ -295,9 +534,22 @@ body {
 }
 
 .catalog-item a {
+    display: inline-block;
+    text-align: center;
     text-decoration: none;
     font: 500 10.5px / 14.441px Roboto;
     color: #ffffff;
+}
+
+.catalog-item .hit {
+    position: absolute;
+    display: block;
+    width: 61px;
+    height: 61px;
+    background: #ffffff url(../img/sprite.png);
+    border-radius: 50%;
+    background-position: -370px -10px;
+    background-repeat: no-repeat;
 }
 
 .catalog-item:last-child {
@@ -307,6 +559,7 @@ body {
 .catalog-item .price {
     position: absolute;
     bottom: 54px;
+    left: 10px;
     /* Типографика */
     font: 700 45px / 45px Roboto;
     /* Оформление */
@@ -338,9 +591,32 @@ body {
     display: inline-block;
     vertical-align: baseline;
     width: 1200px;
+    position: relative;
+    z-index: 1;
     /* Типографика */
     /* Оформление */
-   
+}
+
+.about-company ul {
+    width: 100%;
+    padding: 0;
+    padding-left: 76px;
+    color: #323232;
+}
+
+.about-company li {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.about-company h3 {
+    /* Типографика */
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 30px;
+    /* Оформление */
+    color: #323232;
 }
 
 .wafer {
@@ -350,24 +626,86 @@ body {
     padding-left: 27px;
     padding-right: 27px;
     padding-top: 5px;
-    padding-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
-.about-company h3 {
-    /* Типографика */
-    font: 500 24px / 30px Roboto;
-    /* Оформление */
-    color: #323232;
+.wafer ul {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    vertical-align: top;
+    
 }
 
-.about-company ul {
-    padding-left: 76px;
-    /* Типографика */
-    font: 400 16px / 22px Roboto;
-    /* Оформление */
-    color: #323232;
+.wafer li {
+    display: inline-block;
+    width: 476px;
+    margin-bottom: 20px;
+}
+
+
+
+.first-half li:nth-child(1) {
+    display: inline-block;
+}
+
+.first-half li:nth-child(1)::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    width: 49px;
+    height: 49px;
+    background-position: -579px -10px;
+    left: 50px;
+}
+
+.first-half li:nth-child(2) {
+    display: inline-block;
+}
+
+.first-half li:nth-child(2)::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    width: 49px;
+    height: 49px;
+    background-position: -700px -10px;
+    left: 50px; 
+}
+
+.second-half li:nth-child(1) {
+    display: inline-block;
+}
+
+.second-half li:nth-child(1)::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    width: 48px;
+    height: 49px;
+    background-position: -174px -10px;
+    left: 595px; 
+}
+
+.second-half li:nth-child(2) {
+    display: inline-block;
+}
+
+.second-half li:nth-child(2)::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    width: 48px;
+    height: 49px;
+    background-position: -846px -10px;
+    left: 595px;
 }
 
 /* ---------- ---------- ---------- */
@@ -383,28 +721,32 @@ body {
     /* Блочная модель */
     display: inline-block;
     width: 1200px;
+    position: relative;
+    z-index: 1;
     /* Типографика */
     /* Оформление */  
 }
 
 .blog {
     display: inline-block;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 20px;
     vertical-align: top;
     width: 560px;
+    height: 220px;
     background: url("../img/strawberry-background.png");
     background-repeat: no-repeat;
 }
 
 .blog span {
-    padding-top: 26px;
-    padding-left: 20px;
+    padding-top: 13px;
     /* Блочная модель */
     display: block;
     /* Типографика */
-    font: 500 16px / 22px Roboto;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
     /* Оформление */
     color: #323232;
     
@@ -413,36 +755,45 @@ body {
 .blog a {
     display: inline-block;
     padding-left: 1px;
-    padding-top: 13px;
+    width: 285px;
     /* Типографика */
-    font: 700 24px / 30px Roboto;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 30px;
     /* Оформление */
     color: #323232;
 }
 
 .subscription {
     /* Блочная модель */
+    padding-left: 26px;
     display: inline-block;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 37px;
+    padding-bottom: 40px;
     vertical-align: top;
-    width: 549px; 
-    background-color: #f8f7f4;
+    width: 560px; 
+    background-image: url(../img/letter-background.png);
+    background-repeat: no-repeat;
     border-radius: 15px;
-    margin-left: 32px;
+    margin-left: 25px;
 }
 
 .subscription p {
-    padding-left: 21px;
     /* Типографика */
-    font: 400 16px / 22px Roboto;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
     /* Оформление */
     color: #5a5a5a;
+    margin-top: -6px;
+    margin-bottom: 38px;
 }
 
 .subscription input[type="text"] {
-    padding-left: 21px;
     width: 368px;
+    height: 44px;
     /* Типографика */
     font: 400 16px / 24px Roboto;
     /* Оформление */
@@ -450,11 +801,17 @@ body {
 }
 
 .subscription button {
+    display: inline-block;
     width: 129px;
     /* Типографика */
     font: 700 18px / 24px Roboto;
     /* Оформление */
+    height: 44px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f16743;
     color: #fefefe;
+    margin-left: 11px;
 }
 
 /* ---------- ---------- ---------- */
@@ -467,7 +824,7 @@ body {
     display: block;
     width: 1200px;
     padding-top: 118px;
-    padding-bottom: 118px;
+    padding-bottom: 20px;
     /* Типографика */
     /* Оформление */
     background: url("../img/map.png");
@@ -482,7 +839,8 @@ body {
     width: 302px;
     height: 305px;
     /* Оформление */
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.98);
+    margin-left: 871px;
 }
 
 .communication p {
@@ -507,8 +865,11 @@ body {
     font: 700 18px / 24px Roboto;
     /* Оформление */
     color: #fefefe;
-    background: url(images/orange-button-4.png);
-    background-repeat: no-repeat;
+    width: 252px;
+    height: 44px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #f16743;
 }
 
 .feedback-field {
@@ -529,29 +890,133 @@ footer {
     /* Типографика */
     /* Оформление */
     background-color: #829b8d;
+    position: relative;
+    z-index: 1;
 }
 
 .social-btn {
     display: inline-block;
     width: 350px;
+    position: relative;
 }
 
+.social-btn-twitter a {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    width: 33px;
+    height: 32px;
+    background-position: -914px -10px;
+    border-radius: 50%;
+    top: -45px;
+    
+}
+
+.social-btn-instagram {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    width: 32px;
+    height: 32px;
+    background-position: -648px -10px;
+    border-radius: 50%;
+    left: 80px;
+    top: -45px;
+}
+
+.social-btn-facebook {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    width: 32px;
+    height: 32px;
+    background-position: -283px -10px;
+    left: 120px;
+    top: -45px;
+    border-radius: 50%;
+}
+    
+.social-btn-vkontakte {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    width: 32px;
+    height: 32px;
+    background-position: -967px -10px;
+    left: 160px;
+    top: -45px;
+    border-radius: 50%;
+}
+    
 .documents {
     /* Блочная модель */
     display: inline-block;
     width: 350px;
-    
+    left: 80px ;
+    vertical-align: top;
+}
+
+.documents ul {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.documents li {
+    display: inline-block;
+    margin-bottom: 20px;
+     margin: 0;
+    padding: 0;
+}
+
+.third-half {
+    float: left;
+}
+
+fourth-half {
+    float: left;
 }
 
 .documents a {
     /* Типографика */
     font: 700 13px / 18px Roboto;
+    text-decoration: none;
     /* Оформление */
     color: #ffffff;
 }
 
+.third-half li:nth-child(1) {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+}
+
+.third-half li:nth-child(1)::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-image: url(../img/sprite.png);
+    width: 15px;
+    height: 13px;
+    background-position: -335px -10px;
+    left: 1px;
+}
+
+.third-half li:nth-child(2) {
+    display: inline-block;
+    padding-left: 20px;
+}
 .copyright {
     display: inline-block;
+    text-align: right;
     width: 350px;
     
     
@@ -560,8 +1025,58 @@ footer {
 .copyright p {
     /* Типографика */
     font: 400 12px / 18px Roboto;
+    color: #fefefe;
+}
+
+.copyright a {
+    font: 400 12px / 18px Roboto;
+    color: #fefefe;
+    text-decoration: none;
 }
 /* ---------- ---------- ---------- */
+
+/* ---------- Каталог хедер ---------- */
+
+.red-basket {
+    display: inline-block;
+    vertical-align: top;
+    width: 117px;
+    height: 32px;
+    border-radius: 40px;
+    border-color: rgba(248, 247, 244, 0.99);
+    border-style: none;
+    background-color: rgba(248, 247, 244, 0.99);
+    position: relative;
+}
+
+.red-basket::before {
+    background-image: url(../img/sprite.png);
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 20px;
+    background-position: -92px -10px;
+    top: 4px;
+    left: 19px;    
+}
+
+.red-basket a {
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 34px;
+    padding-bottom: 9px;
+    padding-left: 45px;
+    text-decoration: none;
+    font: 500 14px / 16px Roboto;
+    color: #323232;
+ 
+    
+}
+}
+
+/* ---------- Каталог хедер ---------- */
+
+
 
 /* ---------- Хлебные крошки ---------- */
 .text-field h1 {
@@ -755,15 +1270,128 @@ input[type="range"] {
 }
 /* ---------- ---------- ---------- */
 
+/* ---------- СПРАЙТЫ ---------- */
 
-/* ---------- Шрифты ---------- */
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/web/roboto.woff2")
-    format("woff2"),
-         url("../fonts/web/roboto.woff")
-    format("woff")
+.sprite {
+    background-image: url("/img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
 }
 
+.sprite-basket {
+    width: 21px;
+    height: 20px;
+    background-position: -10px -10px;
+}
 
+.sprite-basket-black {
+    width: 21px;
+    height: 20px;
+    background-position: -51px -10px;
+}
 
+.sprite-basket-red {
+    width: 21px;
+    height: 20px;
+    background-position: -92px -10px;
+}
+
+.sprite-circle {
+    width: 21px;
+    height: 22px;
+    background-position: -133px -10px;
+}
+
+.sprite-cow {
+    width: 48px;
+    height: 49px;
+    background-position: -174px -10px;
+}
+
+.sprite-entrance {
+    width: 21px;
+    height: 19px;
+    background-position: -242px -10px;
+}
+
+.sprite-facebook {
+    width: 32px;
+    height: 32px;
+    background-position: -283px -10px;
+}
+
+.sprite-heart {
+    width: 15px;
+    height: 13px;
+    background-position: -335px -10px;
+}
+
+.sprite-hit {
+    width: 61px;
+    height: 61px;
+    background-position: -370px -10px;
+}
+
+.sprite-htmlacademy-logo {
+    width: 108px;
+    height: 38px;
+    background-position: -451px -10px;
+}
+
+.sprite-ice-cream {
+    width: 49px;
+    height: 49px;
+    background-position: -579px -10px;
+}
+
+.sprite-instagram {
+    width: 32px;
+    height: 32px;
+    background-position: -648px -10px;
+}
+
+.sprite-leaf {
+    width: 49px;
+    height: 49px;
+    background-position: -700px -10px;
+}
+
+.sprite-search {
+    width: 17px;
+    height: 17px;
+    background-position: -769px -10px;
+}
+
+.sprite-square {
+    width: 20px;
+    height: 20px;
+    background-position: -806px -10px;
+}
+
+.sprite-thermometer {
+    width: 48px;
+    height: 49px;
+    background-position: -846px -10px;
+}
+
+.sprite-twitter {
+    width: 33px;
+    height: 32px;
+    background-position: -914px -10px;
+}
+
+.sprite-vkontakte {
+    width: 32px;
+    height: 32px;
+    background-position: -967px -10px;
+}
+
+/* ---------- ---------- ---------- */
+
+/*  
+    width: 87px;
+    height: 32px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #ffffff;
+*/
