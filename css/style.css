@@ -539,11 +539,10 @@ button[type="submit"] {
     z-index: 1;
 }
 
-
 .raspberry {
     vertical-align: top;
-    padding-bottom: 101px;
-    padding-bottom: 101px;
+    margin-bottom: 101px;
+    border-radius: 15px;
     background: url("../img/raspberry-background.png");
     background-color: #932949;
     background-repeat: no-repeat;
@@ -554,7 +553,7 @@ button[type="submit"] {
     display: block;
     text-decoration: none;
     width: 167px;
-    height: 48px;
+    height: 45px;
     border-radius: 25px;
     border-style: none;
     background-color: #f16743;
@@ -581,8 +580,8 @@ button[type="submit"] {
 
 .chocolate {
     vertical-align: top;
-    padding-bottom: 101px;
-    padding-bottom: 101px;
+    margin-bottom: 101px;
+    border-radius: 15px;
     background: url("../img/chocolate-background.png");
     background-color: #623a20;
     background-repeat: no-repeat;
@@ -820,6 +819,7 @@ button[type="submit"] {
     background: url("../img/wafer-background.png");
     background-color: #eadec1;
     background-repeat: no-repeat;
+    border-radius: 15px;
     width: 1146px;
     padding-left: 27px;
     padding-right: 27px;
@@ -863,6 +863,7 @@ button[type="submit"] {
 
 .first-half li:nth-child(2) {
     display: inline-block;
+    margin-bottom: 0;
 }
 
 .first-half li:nth-child(2)::before {
@@ -893,6 +894,7 @@ button[type="submit"] {
 
 .second-half li:nth-child(2) {
     display: inline-block;
+    margin-bottom: 0;
 }
 
 .second-half li:nth-child(2)::before {
@@ -935,6 +937,7 @@ button[type="submit"] {
     height: 220px;
     background: url("../img/strawberry-background.png");
     background-color: #ffffff;
+    border-radius: 15px;
     background-repeat: no-repeat;
 }
 
@@ -996,10 +999,12 @@ button[type="submit"] {
     /* Оформление */
     color: #5a5a5a;
     margin-top: -6px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
 }
 
 .subscription input[type="text"] {
+    margin: 0;
+    padding: 0;
     width: 368px;
     height: 44px;
     /* Типографика */
@@ -1010,6 +1015,8 @@ button[type="submit"] {
 
 .subscription button {
     display: inline-block;
+    margin: 0;
+    padding: 0;
     width: 129px;
     /* Типографика */
     font: 700 18px / 24px Roboto;
