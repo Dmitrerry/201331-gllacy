@@ -47,6 +47,8 @@ body {
 }
 
 .main-logo {
+    margin-top: 9px;
+    margin-left: -6px;
     display: inline-block;
     width: 154px;
     vertical-align: bottom;
@@ -57,6 +59,12 @@ body {
     position: relative;
     z-index: 2;
     
+}
+
+.DDD {
+    margin-top: -52px;
+    padding: 0;
+    padding-left: 15px;
 }
 
 .DDD > li {
@@ -81,7 +89,8 @@ body {
 .navigation-line {
     display: none;
     position: absolute;
-    top: 30px;
+    top: 25px;
+    left: -10px;
     padding: 5px;
 }
 
@@ -90,10 +99,11 @@ body {
 }
 /*------------------------------------*/
 .two-button > a {
+    height: 32px;
+    padding: 5px 0;
     padding-left: 14px;
     padding-right: 13px;
-    padding-top: 9px;
-    padding-bottom: 10px;
+    
 }
 
 .two-button:hover > a {
@@ -133,22 +143,28 @@ body {
     line-height: 16px;
     font-weight: 400;
     color: #323232;
-    padding-left: 21px;
+    padding-left: 18px;
     height: 28px;
+    padding-top: 8px;
+    margin-bottom: 2px;
 }
 
 .catalog-panel .news {
+    height: 35px;
     color: #323232;  
     font-family: Roboto;
     font-size: 14px;
     line-height: 16px;
     font-weight: 700; 
+    padding-bottom: 10px;
 }
-
+.catalog-panel li:first-child {
+    padding-top: 4px;
+}
 .news {
+    display: block;
     width: 128px;
     margin-left: 0;
-    margin-top: 13px;
     border-bottom: 1px solid #d1d0ce;  
 }
 
@@ -159,8 +175,9 @@ body {
 
 .customer-panel {
     display: inline-block;
-    margin-left: 309px;
-
+    margin-left: 344px;
+    margin-top: -4px;
+    vertical-align: middle;
 }
 
 /*------------------------------------*/
@@ -177,7 +194,7 @@ body {
     height: 33px;
     display: block;
     background-image: url(../img/sprite.png);
-    background-position: -762px -3px; 
+    background-position: -761px -3px; 
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -189,8 +206,8 @@ body {
 .search-line {
     display: none;
     position: absolute;
-    top: 65px;
-    left: 590px;
+    top: 55px;
+    left: 596px;
     padding: 5px;
     z-index: 2;
 }
@@ -223,6 +240,13 @@ input[type="search"] {
     display: block;
 }
 /*------------------------------------*/
+.login-line {
+    padding: 5px;
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: -189px;
+}
 
 .main-login {
     display: inline-block;
@@ -243,11 +267,6 @@ input[type="search"] {
     background-position: -1048px -10px;  
 }
 
-.login-line {
-    padding: 5px;
-    display: none;
-}
-
 .main-login::before {
     content: "";
     position: absolute;
@@ -255,13 +274,14 @@ input[type="search"] {
     background-position: -242px -10px;
     width: 21px;
     height: 19px;
-    top: 5px;
+    top: 7px;
     left: 18px;
     pointer-events: none;
 }
 
 .main-login a {
     display: block;
+    height: 32px;
     padding-top: 10px;
     padding-right: 17px;
     padding-bottom: 9px;
@@ -327,14 +347,13 @@ button[type="submit"] {
 }
 
 .login-field {
-    position: absolute;
-    top: 40px;
-    left: -180px;
+    position: relative;
     padding-top: 20px;
     padding-left: 19px; 
     width: 277px;
     background-color: #f8f7f4;
     border-radius: 5px;
+    box-shadow: 0px 20px 20px 0.00px rgba(0, 0, 0, 0.4);
 }
 
 .main-login:hover .enter-button {
@@ -373,13 +392,14 @@ button[type="submit"] {
     width: 21px;
     height: 20px;
     background-position: -10px -10px;
-    top: 4px;
-    left: 19px;
+    top: 7px;
+    left: 17px;
     pointer-events: none;
 }
 
 .main-basket > a {
     display: block;
+    height: 32px;
     padding-top: 10px;
     padding-right: 34px;
     padding-bottom: 9px;
@@ -406,20 +426,28 @@ button[type="submit"] {
 
 
 .contacts {
-    width: 166px;
-    float: right;
+    position: absolute;
+    width: 170px;
+    z-index: 5;
+    top: -22px;
+    right: 28px;
+    text-align: right;
+    
 }
 
 .contacts p {
     /* Типографика */
     font: 700 14px / 16px Roboto;
     color: #ffffff;
+    margin-bottom: 3px;
 }
 
 .contacts span {
+    display: block;
     /* Типографика */
     font: 700 22px / 24px Roboto;
     color: #ffffff;
+    padding-left: -4px;
 }
 
 
@@ -2159,7 +2187,8 @@ input[type="checkbox"]:checked + label::after {
     margin-bottom: 30px;
     font-weight: 800;
     font-size: 60px;
-    top: 487px;
+    line-height: 60px;
+    top: 448px;
     left: 230px;
 }
 
@@ -2195,8 +2224,8 @@ input[type="checkbox"]:checked + label::after {
 
 .slider-controls {
   position: absolute;
-  bottom: 290px;
-  left: 10px;
+  bottom: 338px;
+  left: 6px;
   z-index: 20;
   font-size: 0;
 }
@@ -2254,7 +2283,7 @@ input[type="checkbox"]:checked + label::after {
 
 .slide {
     width: 100%;
-    background-position: 260px 90px;
+    background-position: 258px 42px;
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
@@ -2265,7 +2294,7 @@ input[type="checkbox"]:checked + label::after {
     position: absolute;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 10px;
+    padding-top: 8px;
     padding-bottom: 10px;
     display: block;
     font-family: Roboto;
@@ -2278,7 +2307,7 @@ input[type="checkbox"]:checked + label::after {
     border-radius: 35px;
     border-style: none;
     background-color: #f16743;
-    top: 630px;
+    top: 572px;
     left: 440px;
     box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
     margin-top: 29px;
@@ -2298,7 +2327,7 @@ input[type="checkbox"]:checked + label::after {
     width: 100%;
     display: inline-block;
     position: absolute;
-    top: -122px;
+    top: -140px;
 }
 
 .slide:nth-child(1) {
