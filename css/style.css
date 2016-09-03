@@ -2104,7 +2104,7 @@ input[type="checkbox"]:checked + label::after {
 
 .site-wrapper {
     width: 100%;
-    height: 2520px;
+    height: 2550px;
     background-repeat: no-repeat;
     background-position: top center;
     -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -2128,9 +2128,12 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .content-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-image: url(../img/light-background.png);
+    background-repeat: no-repeat;
+    background-position: 80px 50px;
 }
 .slider-block input[type="radio"] {
     display: none;
@@ -2150,18 +2153,19 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .slide-title {
-  width: 700px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-
-  font-weight: 800;
-  font-size: 60px;
+    position: absolute;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 60px;
+    top: 487px;
+    left: 230px;
 }
 
 .slide-btn {
   display: inline-block;
   padding: 12px 50px;
-
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -2191,7 +2195,7 @@ input[type="checkbox"]:checked + label::after {
 
 .slider-controls {
   position: absolute;
-  bottom: 500px;
+  bottom: 290px;
   left: 10px;
   z-index: 20;
   font-size: 0;
@@ -2250,18 +2254,18 @@ input[type="checkbox"]:checked + label::after {
 
 .slide {
     width: 100%;
-    background-position: 250px center;
+    background-position: 260px 90px;
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
     height: 881px;
-
 }
+
 .slide .slide-btn {
     position: absolute;
-    padding-left: 41px;
-    padding-right: 43px;
-    padding-top: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
     padding-bottom: 10px;
     display: block;
     font-family: Roboto;
@@ -2269,14 +2273,15 @@ input[type="checkbox"]:checked + label::after {
     line-height: 44px;
     text-decoration: none;
     color: #ffffff;
-    width: 282px;
+    width: 280px;
     height: 64px;
     border-radius: 35px;
     border-style: none;
     background-color: #f16743;
-    top: 620px;
-    left: 400px;
+    top: 630px;
+    left: 440px;
     box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+    margin-top: 29px;
 }
 
 .slide .slide-btn:hover {
@@ -2293,10 +2298,7 @@ input[type="checkbox"]:checked + label::after {
     width: 100%;
     display: inline-block;
     position: absolute;
-    background-image: url(../img/light-background.png);
-    background-position: 1000px 1000px;
-    z-index: 20;
-    top: -84px;
+    top: -122px;
 }
 
 .slide:nth-child(1) {
