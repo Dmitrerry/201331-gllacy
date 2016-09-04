@@ -271,7 +271,7 @@ input[type="search"] {
     color: #323232;
     border-radius: 25px;
 }
-input[type="text"] {
+.main-login input[type="text"] {
     width: 241px;
     height: 44px;
     margin-bottom: 20px;
@@ -402,8 +402,8 @@ button[type="submit"] {
     position: absolute;
     width: 170px;
     z-index: 5;
-    top: 60px;
-    right: 475px;
+    top: -40px;
+    right: 28px;
     text-align: right;
 }
 
@@ -669,6 +669,7 @@ button[type="submit"] {
     font-size: 18px;
     line-height: 24px;
     color: #fefefe;
+    white-space: nowrap;
 }
 .catalog-item .quick-view:hover {
     color: #fefefe;
@@ -1104,7 +1105,7 @@ iframe {
     display: block;
     margin-top: -11px;
 }
-.communication a {
+.communication > a {
     word-wrap: normal;
     display: block;
     padding-top: 9px;
@@ -1125,13 +1126,13 @@ iframe {
     box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
     margin-top: 26px;
 }
-.communication a:hover {
+.communication > a:hover {
     background-color: #ed7260;
     background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
     background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
     color: #ffffff;
 }
-.communication a:active {
+.communication > a:active {
     background-color: #e05e3d;
     background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
@@ -1139,8 +1140,136 @@ iframe {
     box-shadow: inset 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
 }
 .feedback-field {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 350px;
+    width: 478px;
+    height: 443px;
+    background-color: #f8f7f4;
     /* Блочная модель */
+    display: block;
+    border-radius: 10px;
+    padding-left: 24px;
+    padding-top: 20px;
+    z-index: 100;
+}
+
+.feedback-field a {
+    position: absolute;
+    top: 10px;
+    left: 450px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.feedback-field a:before,
+.feedback-field a:after {
+	content: "";
+	position: absolute;
+	top:10px;
+	left: 0px;
+	display: block;
+	width: 22px;
+	height: 2px;
+	background-color: #000000;
+}
+
+.feedback-field a:before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.feedback-field a:after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.feedback-field h4 {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.feedback-field input[type="text"] {
+    display: block;
+    width: 267px;
+    height: 44px;
+    margin-top: 24px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+.feedback-field input[type="email"] {
+    display: block;
+    width: 267px;
+    height: 44px;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+.feedback-field textarea {
+    display: block;
+    width: 428px;
+    height: 155px;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+.feedback-field button {
+    width: 139px;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-left: 290px;
+}
+
+.feedback-field button:hover {
+    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    color: #ffffff;
+}
+
+.feedback-field button:active {
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    color: #ffffff;
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
     display: none;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.feedback-form-show {
+	display: block;
+}
+
+.feedback-form-error {
+
 }
 
 /* ---------- ---------- ---------- */
@@ -1513,6 +1642,10 @@ footer .line {
 
 
 /* ---------- Хлебные крошки ---------- */
+
+.text-field  {
+    position: relative;
+}
 
 .text-field h1 {
     font: 700 35px / 41px Roboto;
