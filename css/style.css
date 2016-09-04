@@ -465,8 +465,8 @@ button[type="submit"] {
     /* Типографика */
     /* Оформление */
     background-color: #829b8d;
-    margin-bottom: 10px;
-    margin-top: -250px;
+    margin-bottom: -60px;
+    margin-top: -315px;
     
 }
 
@@ -482,6 +482,55 @@ button[type="submit"] {
     z-index: 1;
 }
 
+.offers h2 {
+    /* Типографика */
+    font-family: Roboto;
+    font-size: 35px;
+    line-height: 41px;
+    /* Оформление */
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: -2px;
+}
+
+.offers p {
+    /* Типографика */
+    width: 512px;
+    font-weight: 400px;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 22px;
+    /* Оформление */
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    margin-top: 14px;
+    margin-left: 1px;
+}
+
+.offers a {
+    /* Позиционирование */
+    padding-top: 14px;
+    padding-right: 22px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    /* Блочная модель */
+    width: 189px;
+    /* Типографика */
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+    /* Оформление */
+    color: #ffffff;
+    margin: 0 20px 0 0;
+    float: right;
+    text-align: center;
+    margin-top: 37px
+}
+
+
 .raspberry {
     vertical-align: top;
     margin-bottom: 101px;
@@ -495,7 +544,7 @@ button[type="submit"] {
 .raspberry a {
     display: block;
     text-decoration: none;
-    width: 167px;
+    width: 165px;
     height: 45px;
     border-radius: 25px;
     border-style: none;
@@ -508,6 +557,11 @@ button[type="submit"] {
     line-height: 24px; 
     margin-left: 331px;
     box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+    margin-top: 38px;
+    margin-bottom: 8px;
+    padding: 0;
+    padding-top: 8px;
+    padding-left: 1px;
 }
 
 .raspberry a:hover {
@@ -548,6 +602,13 @@ button[type="submit"] {
     line-height: 24px;
     margin-left: 330px;
     box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 1px;
+    margin-right: 20px;
+    padding: 0;
+    padding-top: 8px;
+    padding-right: 3px
 }
 
 .chocolate a:hover {
@@ -561,42 +622,6 @@ button[type="submit"] {
     box-shadow: inset 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
 }
 
-.offers h2 {
-    /* Типографика */
-    font-family: Roboto;
-    font-size: 35px;
-    line-height: 41px;
-    /* Оформление */
-    color: #ffffff;
-}
-
-.offers p {
-    /* Типографика */
-    font-family: Roboto;
-    font-size: 18px;
-    line-height: 22px;
-    /* Оформление */
-    color: #ffffff;
-}
-
-.offers a {
-    /* Позиционирование */
-    padding-top: 14px;
-    padding-right: 22px;
-    padding-bottom: 14px;
-    padding-left: 22px;
-    /* Блочная модель */
-    width: 189px;
-    /* Типографика */
-    font-family: Roboto;
-    font-size: 18px;
-    line-height: 24px;
-    /* Оформление */
-    color: #ffffff;
-    margin: 0 20px 0 0;
-    float: right;
-    text-align: center;
-}
 
 /* ---------- ---------- ---------- */
 
@@ -612,7 +637,7 @@ button[type="submit"] {
     /* Типографика */
     /* Оформление */
     background-color: #829b8d;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     position: relative;
     z-index: 2;
     background-color: transparent;
@@ -646,8 +671,7 @@ button[type="submit"] {
 }
 
 .catalog-item a {
-    
-     Типографика 
+    width: 251px;
     font-family: Roboto;
     font-size: 16px;
     line-height: 22px;
@@ -712,33 +736,25 @@ button[type="submit"] {
 
 .catalog-item .price {
     position: absolute;
-    top: 214px;
-    left: 10px;
+    top: 209px;
+    left: -1px;
     /* Типографика */
     font: 700 45px / 45px Roboto;
     /* Оформление */
     color: #ffffff;
 }
 
+.price .rubles {
+    font-size: 45px;
+    margin-left: 1px;
+}
 .price span {
     /* Типографика */
     font: 700 30px / 45px Roboto;
     /* Оформление */
     color: #ffffff;
+    left: 4px;
 }
-
-/*
-.catalog-item a {
-    width: 247px;
-     Типографика 
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 22px;
-    margin-top: 14px; 
-    min-height: 45px;
-    
-}
-*/
 
 
 .catalog-item .icecream-hover {
@@ -765,8 +781,8 @@ button[type="submit"] {
 }
 
 .icecream-hover .price {
-    top: 220px;
-    left: 23px;
+    top: 215px;
+    left: 11px;
 }
 
 .icecream-hover .hit {
@@ -810,6 +826,9 @@ button[type="submit"] {
     line-height: 30px;
     /* Оформление */
     color: #323232;
+    margin-left: 0;
+    margin-top: 18px;
+    margin-left: -6px
 }
 
 .wafer {
@@ -829,7 +848,7 @@ button[type="submit"] {
 .wafer ul {
     display: inline-block;
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     overflow: hidden;
     vertical-align: top;
     
@@ -845,6 +864,8 @@ button[type="submit"] {
 
 .first-half li:nth-child(1) {
     display: inline-block;
+    width: 478px;
+    margin-left: -27px;
 }
 
 .first-half li:nth-child(1)::before {
@@ -855,12 +876,15 @@ button[type="submit"] {
     width: 49px;
     height: 49px;
     background-position: -579px -10px;
-    left: 50px;
+    left: 20px;
+    top: 94px;
 }
 
 .first-half li:nth-child(2) {
     display: inline-block;
     margin-bottom: 0;
+    margin-left: -27px;
+    margin-top: 2px;
 }
 
 .first-half li:nth-child(2)::before {
@@ -871,11 +895,13 @@ button[type="submit"] {
     width: 49px;
     height: 49px;
     background-position: -700px -10px;
-    left: 50px; 
+    left: 20px; 
+    top: 182px;
 }
 
 .second-half li:nth-child(1) {
     display: inline-block;
+    margin-left: -8px
 }
 
 .second-half li:nth-child(1)::before {
@@ -886,12 +912,15 @@ button[type="submit"] {
     width: 48px;
     height: 49px;
     background-position: -174px -10px;
-    left: 595px; 
+    left: 585px; 
+    top: 94px;
 }
 
 .second-half li:nth-child(2) {
     display: inline-block;
     margin-bottom: 0;
+    margin-left: -8px;
+    margin-top: 2px 
 }
 
 .second-half li:nth-child(2)::before {
@@ -902,7 +931,8 @@ button[type="submit"] {
     width: 48px;
     height: 49px;
     background-position: -846px -10px;
-    left: 595px;
+    left: 585px;
+    top: 182px;
 }
 
 /* ---------- ---------- ---------- */
@@ -913,8 +943,8 @@ button[type="submit"] {
     /* Позиционирование */
     padding-left: 27px;
     padding-right: 27px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     /* Блочная модель */
     display: inline-block;
     width: 1200px;
@@ -948,6 +978,8 @@ button[type="submit"] {
     line-height: 22px;
     /* Оформление */
     color: #323232;
+    margin-top: -10px;
+    margin-left: -1px;
     
 }
 
@@ -961,6 +993,8 @@ button[type="submit"] {
     line-height: 30px;
     /* Оформление */
     color: #323232;
+    margin-top: 3px;
+    margin-left: -3px
 }
 
 .blog a:hover {
@@ -1008,6 +1042,7 @@ button[type="submit"] {
     font: 400 16px / 24px Roboto;
     /* Оформление */
     color: #999999;
+    padding-left: 11px;
 }
 
 .subscription button {
@@ -1025,6 +1060,7 @@ button[type="submit"] {
     color: #fefefe;
     margin-left: 11px;
     box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+    padding-bottom: 10px;
 }
 
 .subscription button:hover {
@@ -1092,6 +1128,7 @@ iframe {
 .map .communication {
     position: absolute;
     display: inline-block;
+
     padding-left: 25px;
     width: 302px;
     height: 305px;
@@ -1104,24 +1141,41 @@ iframe {
 }
 
 .communication p {
+    display: block;
     /* Типографика */
     font: 400 14px / 20px Roboto;
     color: #323232;
+    margin-top: 5px;
 }
 
 .communication p:nth-child(1) {
-    margin-top: 32px;
+    margin-top: 26px;
+    margin-bottom: 18px;
 }
 
 .communication span {
+    display: block;
     /* Типографика */
     font: 700 18px / 24px Roboto;
     color: #323232;
+    margin-top: 2px;
 }
+
+.tel-number span {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+.communication .time-work {
+    display: block;
+    margin-top: -11px;
+}
+
 .communication a {
     word-wrap: normal;
     display: block;
-    padding-top: 13px;
+    padding-top: 5px;
     padding-left: 28px;
     text-decoration: none;
     width: 196px;
@@ -1175,6 +1229,7 @@ footer {
     display: inline-block;
     width: 350px;
     position: relative;
+    top: 2px;
 }
 
 .social-btn li { 
@@ -1183,8 +1238,13 @@ footer {
     padding: 3px; 
     width: 38px; 
     height: 38px; 
-    margin-right: 7px; 
+    margin-right: 10px; 
     border-radius: 50%; 
+}
+
+.social-btn ul {
+    margin-top: 30px;
+    margin-left: -40px;
 }
 
 .social-btn a {
@@ -1237,30 +1297,33 @@ footer {
 .documents {
     /* Блочная модель */
     display: inline-block;
-    width: 350px;
+    width: 360px;
     left: 80px ;
     vertical-align: top;
+    margin-top: 32px;
+    margin-left: 50px;
 }
 
 .documents ul {
     display: inline-block;
-    width: 50%;
     margin-bottom: 20px;
     overflow: hidden;
     vertical-align: top;
     margin: 0;
+    margin-right: 12px;
     padding: 0;
 }
 
 .documents li {
     display: inline-block;
-    margin-bottom: 20px;
-     margin: 0;
+    margin: 0;
+    margin-bottom: 4px;
     padding: 0;
 }
 
 .third-half {
     float: left;
+    width: 150px;
 }
 
 .third-half a:hover {
@@ -1271,8 +1334,11 @@ footer {
     color: #ffbc9e;
 }
 
-fourth-half {
-    float: left;
+.fourth-half {
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px; 
 }
 
 .fourth-half a:hover {
@@ -1295,6 +1361,7 @@ fourth-half {
     display: inline-block;
     position: relative;
     padding-left: 20px;
+    
 }
 
 .third-half li:nth-child(1)::before {
@@ -1305,25 +1372,28 @@ fourth-half {
     width: 15px;
     height: 13px;
     background-position: -335px -10px;
-    left: 1px;
+    left: -2px;
+    top: 4px;
 }
 
 .third-half li:nth-child(2) {
     display: inline-block;
     padding-left: 20px;
 }
+
+
 .copyright {
+    float: right;
     display: inline-block;
     text-align: right;
     width: 350px;
-    
-    
 }
 
 .copyright p {
     /* Типографика */
     font: 400 12px / 18px Roboto;
     color: #fefefe;
+    margin-top: 18px;
 }
 
 .copyright a {
@@ -1338,6 +1408,12 @@ fourth-half {
 
 .copyright a:active {
     color: #ffbc9e;
+}
+
+.copyright img {
+    position: relative;
+    top: 18px;
+    right: 80px;
 }
 /* ---------- ---------- ---------- */
 
