@@ -58,6 +58,12 @@ body {
     padding: 0;
     padding-left: 15px;
 }
+
+.catalog-button {
+    background-color: #d07058;
+    border-radius: 15px;
+}
+
 .DDD > li {
     display: inline-block;
     position: relative;
@@ -743,7 +749,7 @@ button[type="submit"] {
 
 .icecream-hover > .price {
     display: block;
-    padding-top: 5px;
+    padding-top: 7px;
     padding-left: 1px;
     top: 300px;
     left: 11px;
