@@ -1758,6 +1758,7 @@ footer .line {
     color: #ffffff;
     margin-bottom: 6px;
     padding-left: 15px;
+    white-space: nowrap;
 }
 .forms-selector {
     position: relative;
@@ -1950,6 +1951,7 @@ input[type="checkbox"]:checked + label::after {
     border-radius: 40px;
     height: 37px;
     padding-left: 18px;
+    white-space: nowrap;
 }
 .order-designer button {
     width: 144px;
